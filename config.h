@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=17:antialias=true:autohint=true";
-static char *font2[] = { "JetBrainsMono Nerd Font:pixelsize=17:antialias=true:autohint=true" };
+static char *font = "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true";
+static char *font2[] = { "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -132,12 +132,10 @@ static const char *colorname[] = {
 	"#F5C2E7",
 	"#94E2D5",
 	"#A6ADC8",
-	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#F5E0DC", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#1E1E2E", /* 258 -> bg */
-	"#CDD6F4", /* 259 -> fg */
+  [256] = "#F5E0DC", /* default foreground colour */
+  [257] = "#555555", /* default background colour */
+  [258] = "#1E1E2E", /*575268*/
+  [259] = "#CDD6F4", /*575268*/
 };
 
 
@@ -148,7 +146,7 @@ static const char *colorname[] = {
 unsigned int defaultfg = 259;
 unsigned int defaultbg = 258;
 unsigned int defaultcs = 256;
-unsigned int defaultrcs = 257;
+unsigned int defaultrcs = 256;
 unsigned int background = 258;
 
 /*
