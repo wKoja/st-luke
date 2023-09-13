@@ -9,6 +9,7 @@ static char *font = "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohin
 static char *font2[] = { "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true" };
 static int borderpx = 2;
 
+
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
@@ -115,7 +116,7 @@ float alphaUnfocus;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"#45475A",
-	"#F38BA8",
+	"#cc241d",
 	"#A6E3A1",
 	"#F9E2AF",
 	"#89B4FA",
